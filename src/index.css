@@ -1,0 +1,263 @@
+:root {
+  --primary-color: #232B33;
+  --secondary-color: #333F4A;
+  --tertiary-color: #28313A;
+  --quatiary-color: #181E24;
+
+  --text-color: #FFF;
+}
+
+html {
+  display: flex;
+
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex: 1;
+
+  flex-direction: column;
+  
+  font-family: 'Source Code Pro', monospace;
+  color: var(--text-color);
+
+  margin: 0px;
+  
+  background-color: var(--primary-color);
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #7E7E7E;
+}
+
+.button-text {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: bold;
+  user-select: none;
+}
+
+.body-text {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.body-text-error {
+  color: #C81D25
+}
+
+.body-text-success {
+  color: #40916C
+}
+
+.icon {
+  height: 16px;
+  width: 16px;
+  margin-right: 8px;
+}
+
+.folder-open-icon {
+  fill: #354FAB;
+}
+
+.floppy-disk-icon {
+  fill: #6247AA;
+}
+
+.play-icon {
+  fill: #40916C;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  border-radius: 8px;
+  padding: 4px 16px;
+
+  background-color: var(--tertiary-color);
+
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--secondary-color);
+}
+
+.file-buttons {
+  margin-right: 24px; 
+}
+
+.top-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding: 24px;
+
+  background-color: var(--primary-color);
+
+  border-bottom: 1px solid var(--quatiary-color);
+}
+
+.top-bar-file-action {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.bottom-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+  padding: 16px 24px;
+
+  background-color: var(--primary-color);
+}
+
+.code-input {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  background-color: var(--secondary-color);
+
+  border-bottom: 1px solid var(--quatiary-color);
+}
+
+textarea {
+  display: flex;
+  flex: 1;
+
+  border-style: none;
+
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+
+  font-size: 14px;
+  line-height: 16px;
+
+  padding: 24px;
+
+  resize: none;
+}
+
+textarea:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.tabbed-panel {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+
+  background-color: var(--tertiary-color);
+
+  border-bottom: 1px solid var(--quatiary-color);
+
+  overflow-y: hidden;
+}
+
+.tabbed-panel-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.tab-button {
+  display: flex;
+  flex-direction: row;
+
+  padding: 4px 32px;
+
+  cursor: pointer;
+}
+
+.tab-button:hover {
+  background-color: var(--secondary-color);
+}
+
+.tab-button-active {
+  border-bottom: 2px solid #FFB703;
+  font-weight: bold;
+}
+
+.tab-button-error {
+  color: #C81D25;
+}
+
+.tokens-table-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  
+  overflow-y: auto;
+}
+
+table {
+ display: flex;
+ flex-direction: column;
+ flex: 1;
+}
+
+thead {
+  display: block;
+}
+
+tr {
+  display: flex;
+  flex-direction: row;
+  flex: 8;
+}
+
+th {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: center;
+
+  padding: 8px 24px;
+
+  background-color: var(--primary-color);
+
+  border-right: 1px solid var(--secondary-color);
+}
+
+.th-text-column {
+  border-right-width: 0;
+  flex: 4;
+}
+
+td {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: center;
+
+  padding: 8px 24px;
+}
+
+.td-text-column {
+  flex: 4;
+}
+
+.errors-list {
+  display: none;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px 24px;
+
+  overflow-y: auto;
+}
